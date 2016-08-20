@@ -1,0 +1,125 @@
+/*************** Base Elements *************/
+*{
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #663399;  
+  	font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+	margin-top: 1.2rem;	
+}
+
+/*************** Navigation ****************/
+	nav {
+		position: fixed;
+		height: 50px;
+		width: 100%;
+		background-color: rgba(0,0,0,.5);
+		z-index: 99;
+		text-align: center;
+	}
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	nav li {
+		list-style: none;
+		display: inline;
+	}
+
+	nav a {
+		text-decoration: none;
+		display: inline-block;		
+		color: white;
+		margin-left: 30px;
+		line-height: 50px;
+	}
+
+/*************** Sections *******************/
+.fixed-bg {
+	height: 100%;
+	background-color: pink;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.scrolling-section {
+	height: auto;
+	background: linear-gradient(#def1f7, paleturquoise);
+	text-align: center;
+	
+}
+
+.section-one {
+	background-image: url('../img/img-3.jpg');
+}
+
+.section-two {
+	background-image: url('../img/img-0.jpg');
+}
+
+.section-three {
+	background-image: url('../img/img-1.jpg');
+}
+
+
+.top-padding {
+	padding-top: 80px;
+}
+
+
+.heading { 
+	font-size: 1.625rem; /* 26px/16px */
+    letter-spacing: .065em;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/*************** Layout **********************/
+.container {
+	text-align: justify;
+	font-size: 1.4rem;
+	max-width: 900px;
+	margin: 0 auto;	
+	padding: 1em;
+}
+
+/*************** Media Queries ***************/
+
+@media (max-width: 480px) {
+	nav {
+		display: none;
+	}
+
+	.container {
+		font-size: 1em;
+	}
+
+	.heading {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 380px) {
+
+	.container {
+		font-size: 0.95em;
+	}
+
+	.heading {
+		font-size: 1em;
+	}
+
+}

@@ -1,1 +1,1 @@
-# fixed-background-images
+This is a simple project that displays the latest trend of parallax effect using the fixed background image method. 
